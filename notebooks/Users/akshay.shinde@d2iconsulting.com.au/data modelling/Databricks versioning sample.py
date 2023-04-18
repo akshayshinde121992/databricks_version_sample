@@ -97,6 +97,9 @@ spark.sql("CREATE TABLE IF NOT EXISTS sales_fact USING DELTA LOCATION '" + bronz
 
 # MAGIC %md
 # MAGIC ## Update the Sales Fact
+# MAGIC 
+# MAGIC * The version 1 consists of an update that we did wherein the below sql statement was executed
+# MAGIC * UPDATE sales_fact SET Order_Priority = 'High' WHERE Order_Priority = 'H'
 
 # COMMAND ----------
 
@@ -120,6 +123,11 @@ spark.sql("CREATE TABLE IF NOT EXISTS sales_fact USING DELTA LOCATION '" + bronz
 
 # MAGIC %sql
 # MAGIC describe detail sales_fact
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC ## Ignore the below cells
 
 # COMMAND ----------
 
