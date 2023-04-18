@@ -117,6 +117,12 @@ spark.sql("CREATE TABLE IF NOT EXISTS sales_fact USING DELTA LOCATION '" + bronz
 # COMMAND ----------
 
 # MAGIC %md
+# MAGIC 
+# MAGIC ## Repeat the update till we reach version 31
+
+# COMMAND ----------
+
+# MAGIC %md
 # MAGIC ## Command used to check how many files are available for a written detla table
 
 # COMMAND ----------
